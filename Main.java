@@ -1,6 +1,6 @@
 public class Main {
-    public static boolean estAppartementDansQuartier(Quartier quartier, Appartement appartement) {
-        return quartier.contientAppartement(appartement);
+    public static boolean estAppartementDansQuartier(Quartier qrt, Appartement appt) {
+        return qrt.contientAppartement(appt);
     }
 
     public static int compterAppartementsEndroit(Endroit endroit) {

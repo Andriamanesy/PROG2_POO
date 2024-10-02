@@ -9,8 +9,8 @@ public class Quartier extends Endroit {
         this.immeubles = new ArrayList<>();
     }
 
-    public void ajouterImmeuble(Immeuble immeuble) {
-        immeubles.add(immeuble);
+    public void ajouterImmeuble(Immeuble imbl) {
+        immeubles.add(imbl);
     }
 
     @Override
@@ -22,12 +22,12 @@ public class Quartier extends Endroit {
         return totalAppartements;
     }
 
-    public boolean contientAppartement(Appartement appartement) {
-        if (appartements.contains(appartement)) {
+    public boolean contientAppartement(Appartement appt) {
+        if (appartements.contains(appt)) {
             return true;
         }
-        for (Immeuble immeuble : immeubles) {
-            if (immeuble.getAppartements().contains(appartement)) {
+        for (Immeuble imbl : immeubles) {
+            if (imbl.getAppartements().contains(appt)) {
                 return true;
             }
         }
